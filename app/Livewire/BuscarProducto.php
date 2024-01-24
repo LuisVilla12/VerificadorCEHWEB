@@ -1,16 +1,16 @@
 <?php
 
-namespace App\Http\Livewire;
+namespace App\Livewire;
 
 use Livewire\Component;
+use Illuminate\Support\Facades\DB;
 
 class BuscarProducto extends Component
 {
     public $termino;
-
-    public function leerDatosFormulario(){
-        $this->emit('terminosBusqueda',$this->termino);    
-    
+    public function datosFormulario(){
+        dd('buscando');
+        // $this->dispatch('terminosBusqueda', $this->termino);
     }
     public function render()
     {

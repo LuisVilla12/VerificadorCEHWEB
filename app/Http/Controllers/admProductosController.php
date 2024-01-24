@@ -11,9 +11,8 @@ class admProductosController extends Controller
     //
     public function index()
     {
-        $productos = DB::table('dbo.admProductos')->get();
-        
-        return view('productos.index', ['productos' => $productos]);
+    
+        return view('productos.index');
     }
 
     public function prueba()

@@ -1,7 +1,8 @@
 <div>   
+    
     <div class=" py-10">
         <div class="max-w-7xl mx-auto">
-            <form wire:submit.prevent='leerDatosFormulario'>
+            <form wire:submit="datosFormulario">
                 <label 
                     class="block mb-1 text-sm text-gray-700 uppercase font-bold "
                     for="termino">Término de Búsqueda
@@ -12,7 +13,7 @@
                                 <input 
                                     id="termino"
                                     type="text"
-                                    wire:model="termino"
+                                    wire:model.live="termino"
                                     placeholder="Buscar por Término: ej. Laravel"
                                     class="rounded-md shadow-sm border-gray-300 focus:border-indigo-300 focus:ring focus:ring-indigo-200 focus:ring-opacity-50 w-ful p-4 w-full"
                                 />
