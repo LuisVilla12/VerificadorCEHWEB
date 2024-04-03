@@ -5,7 +5,7 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <meta http-equiv="X-UA-Compatible" content="ie=edge">
     <title>Document</title>
-    {{-- <script src="https://cdn.tailwindcss.com"></script> --}}
+     <script src="https://cdn.tailwindcss.com"></script>
     <link rel="stylesheet" href="{{ asset('build/assets/app-6bddb628.css') }}">
     @livewireStyles
 </head>
@@ -22,9 +22,9 @@
 </style>
 
 <body>
-    {{-- <livewire:mostrar-producto> --}}
-        <livewire:search-products /> 
+        {{-- <livewire:search-products />  --}}
         @livewireScripts
+        <livewire:check-products /> 
         @stack('scripts')
         <script src="{{ asset('build/assets/app-02317797.js') }}"></script>
 </body>

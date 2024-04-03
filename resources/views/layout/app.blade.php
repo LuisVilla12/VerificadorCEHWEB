@@ -7,8 +7,6 @@
     <title>Verificador de precios</title>
 </head>
 <body>
-    <p class="text-center">Hola</p>
-    <livewire:buscar-producto>
-    <livewire:mostrar-producto>
+
 </body>
 </html>
